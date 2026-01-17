@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhyey Patel | Computer Science & Finance</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.75);
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, nav a {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 14px 0;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      margin: 0 14px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent-blue);
+    }
+
+    header {
+      padding: 100px 20px 90px;
+      text-align: center;
+      background: linear-gradient(
+        135deg,
+        #0f766e 0%,
+        #1e3a8a 50%,
+        #020617 100%
+      );
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      font-size: 3.4rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.15rem;
+      color: #d1d5db;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 30px;
+      border-left: 4px solid var(--accent-blue);
+      padding-left: 14px;
+    }
+
+    /* 🔥 HOVER WORKS HERE */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 25px;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+      border-color: var(--accent-blue);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    footer {
+      background: #020617;
+      padding: 45px 20px;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#academics">Academics</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+</nav>
+
+<header>
+  <h1>Dhyey Patel</h1>
+  <p>
+    High school senior with strong analytical skills, a passion for computer science,
+    and an interest in the intersection of technology and finance.
+  </p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a motivated student with experience in software development, problem-solving,
+      and collaborative projects. I enjoy building efficient systems, debugging complex logic,
+      and continuously improving my technical skills as I prepare for collegiate study.
+    </p>
+  </div>
+</section>
+
+<section id="academics">
+  <h2>Academics</h2>
+  <div class="card">
+    <ul>
+      <li><strong>School:</strong> Stephen F. Austin High School (Sugar Land, TX)</li>
+      <li><strong>GPA:</strong> 3.86</li>
+      <li><strong>Relevant Coursework:</strong> AP Computer Science A, AP Calculus BC, AP Macroeconomics</li>
+      <li><strong>Intended Major:</strong> Computer Science & Finance</li>
+    </ul>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience & Leadership</h2>
+
+  <div class="card">
+    <h3>Unity Developer — SL_95 Project</h3>
+    <p><em>2024 – Present</em></p>
+    <ul>
+      <li>Developed interactive applications using Unity and C#.</li>
+      <li>Applied logical problem-solving to debug gameplay and system behavior.</li>
+      <li>Collaborated with peers on feature design and implementation.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Teacher’s Assistant — Kumon Sugar Land</h3>
+    <p><em>Aug 2023 – Present</em></p>
+    <ul>
+      <li>Assisted students with mathematics and problem-solving strategies.</li>
+      <li>Managed responsibilities while maintaining strong academic performance.</li>
+      <li>Developed communication and leadership skills.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <p><strong>Programming:</strong> Java, Python, HTML, CSS, JavaScript, C#</p>
+    <p><strong>Development:</strong> Front-End Web Design, Unity Development, OOP</p>
+    <p><strong>Tools:</strong> Git, GitHub, VS Code</p>
+    <p><strong>Professional:</strong> Problem-Solving, Design Thinking, Communication</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Designed and developed a responsive portfolio using semantic HTML and modern CSS
+        to present academic achievements and technical projects.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Java Calculator</h3>
+      <p>
+        Built a calculator application using object-oriented principles with
+        an emphasis on error handling and clean logic.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Dhyey Patel</p>
+  <p>
+    <a href="mailto:dhyeypatel2812@gmail.com">dhyeypatel2812@gmail.com</a> |
+    <a href="tel:8328200952">832-820-0952</a>
+  </p>
+</footer>
+
+</body>
+</html>
